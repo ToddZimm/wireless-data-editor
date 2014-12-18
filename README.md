@@ -10,6 +10,7 @@ the NENA 02-010 Version 2.0 GIS Data Model.
 **Import Cell Table command:** Allows the user to import a table of cell sector data from a Call Routing Sheet into the featureclasses.
 
 **Menu Items:** 
+
 _Change Default State:_ Allows the user to change the state abbreviation used as the default on the Create Sector form. 
 _Change Default County ID:_ Allows the user to change the county FIPS code used as the default on the Create Sector form.
 
