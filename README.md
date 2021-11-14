@@ -45,7 +45,7 @@ all required fields (indicated by an asterix). If "Update Cell Site Point" is ch
 create the cell site point that is associated with the sector. Fill in additional information for the site
 point. Click the OK button to create the sector and site.
 
-If the cell sector or site point already exist, the command will delete the existing records and create new ones
+If the cell sector or site point already exist, the command will delete the existing features and create new features
 with the new data.
 
 _NOTE:_ The default State and County FIPS values can be changed using the commands under the Wireless Data Editor menu.
@@ -110,10 +110,12 @@ Update History
 ----------------------------------------------------------------------------------------------------------------------
 12/19/2011 - Version 1.0
   * First release of ArcGIS 10 Addin version
+  * Compatible with ArcGIS 10.0
 
 09/05/2012 - Version 1.1
   * Improved error messages in Import Cell Table when table does not match expected schema.
   * Fixed default date formatting
+  * Compatible with ArcGIS 10.0 to 10.3
 
-12/18/2014
-  * Source code released on GitHub.
+11/14/2021 - Version 1.2
+  * Compatible with ArcGIS 10.4 or higher.
