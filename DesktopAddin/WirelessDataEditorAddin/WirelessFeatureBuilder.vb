@@ -31,8 +31,9 @@ Public Class WirelessFeatureBuilder
         siteWorkspEdit.StartEditOperation()
 
         'Check if site already exists and delete it
-        Dim queryFilter As IQueryFilter = New QueryFilterClass()
-        queryFilter.WhereClause = "LDTProvider = '" & LDTProvider & "' AND CellSiteID = '" & CellID & "'"
+        Dim queryFilter As IQueryFilter = New QueryFilterClass With {
+            .WhereClause = "LDTProvider = '" & LDTProvider & "' AND CellSiteID = '" & CellID & "'"
+        }
         Dim cursor As ESRI.ArcGIS.Geodatabase.IFeatureCursor = SiteFeatureClass.Update(queryFilter, False)
         Dim existingFeature As IFeature = cursor.NextFeature
         While Not (existingFeature Is Nothing)
@@ -263,8 +264,8 @@ Public Class WirelessFeatureBuilder
             pLineSeg1 = MakeLineSeg(pOrigin, pArcSeg2.FromPoint)
         End If
 
-        Dim pSegColl As ISegmentCollection
-        pSegColl = New Ring
+        Dim pSegColl As ISegmentCollection = New RingClass
+
         If Not pArcSeg1 Is Nothing Then
             pSegColl.AddSegment(pArcSeg1)
         End If
@@ -275,8 +276,7 @@ Public Class WirelessFeatureBuilder
         pRing = CType(pSegColl, IRing)
         pRing.Close()
 
-        Dim pGeomColl As IGeometryCollection
-        pGeomColl = New Polygon
+        Dim pGeomColl As IGeometryCollection = New PolygonClass
         pGeomColl.AddGeometry(CType(pSegColl, IGeometry))
 
         Return CType(pGeomColl, IPolygon)
@@ -294,8 +294,7 @@ Public Class WirelessFeatureBuilder
     Private Function MakeArcSeg(ByVal pOrigin As IPoint, ByVal dRadius As Double, ByVal bCCW As Boolean, _
         ByVal dFromAngle As Double, ByVal dToAngle As Double) As ISegment
 
-        Dim pCCA As IConstructCircularArc2
-        pCCA = New CircularArc
+        Dim pCCA As IConstructCircularArc2 = New CircularArcClass
         pCCA.ConstructArcDistance(pOrigin, MakePoint(pOrigin, dFromAngle, dRadius), bCCW, (dToAngle - dFromAngle) * dRadius)
         Return CType(pCCA, ISegment)
 
@@ -304,8 +303,7 @@ Public Class WirelessFeatureBuilder
     Private Function MakePoint(ByVal pOrigin As IPoint, ByVal dAngle As Double, _
         ByVal dRadius As Double) As IPoint
 
-        Dim pCP As IConstructPoint
-        pCP = New Point
+        Dim pCP As IConstructPoint = New PointClass
         pCP.ConstructAngleDistance(pOrigin, dAngle, dRadius)
         Return CType(pCP, IPoint)
 

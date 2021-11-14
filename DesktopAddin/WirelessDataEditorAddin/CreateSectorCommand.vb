@@ -27,8 +27,11 @@ Public Class CreateSectorCommand
                 Windows.Forms.MessageBox.Show("Error creating site point:" & vbNewLine & ex.Message)
                 Exit Sub
             End Try
-            Dim spRefFac As ISpatialReferenceFactory3 = New SpatialReferenceEnvironment
-            sitePoint.SpatialReference = spRefFac.CreateGeographicCoordinateSystem(ESRI.ArcGIS.Geometry.esriSRGeoCSType.esriSRGeoCS_WGS1984)
+
+            Dim factoryType As Type = Type.GetTypeFromProgID("esriGeometry.SpatialReferenceEnvironment")
+            Dim spRefFac As ISpatialReferenceFactory3 = CType(Activator.CreateInstance(factoryType), ISpatialReferenceFactory3)
+
+            sitePoint.SpatialReference = spRefFac.CreateGeographicCoordinateSystem(esriSRGeoCSType.esriSRGeoCS_WGS1984)
 
             'Edit the workspace
             Dim siteDataset As ESRI.ArcGIS.Geodatabase.IDataset = CType(cellSectorLayer, ESRI.ArcGIS.Geodatabase.IDataset)

@@ -104,7 +104,7 @@ Public Class ImportCellTableCommand
                         'Make the site point
                         Dim sitePoint As ESRI.ArcGIS.Geometry.IPoint = New ESRI.ArcGIS.Geometry.Point()
                         sitePoint.PutCoords(CDbl(tableRow.Value(tableRow.Fields.FindField("Longitude"))), CDbl(tableRow.Value(tableRow.Fields.FindField("Latitude"))))
-                        Dim spRefFac As ISpatialReferenceFactory3 = New SpatialReferenceEnvironment
+                        Dim spRefFac As ISpatialReferenceFactory = New SpatialReferenceEnvironment
                         sitePoint.SpatialReference = spRefFac.CreateGeographicCoordinateSystem(ESRI.ArcGIS.Geometry.esriSRGeoCSType.esriSRGeoCS_WGS1984)
 
                         'Update cell sector dataset

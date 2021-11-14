@@ -77,33 +77,33 @@ Public Class frmAbout
     Private WithEvents ImagePictureBox As System.Windows.Forms.PictureBox
     Private WithEvents DetailsButton As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.OKButton = New System.Windows.Forms.Button
-        Me.AppTitleLabel = New System.Windows.Forms.Label
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.AppDescriptionLabel = New System.Windows.Forms.Label
-        Me.AppVersionLabel = New System.Windows.Forms.Label
-        Me.AppCopyrightLabel = New System.Windows.Forms.Label
-        Me.SysInfoButton = New System.Windows.Forms.Button
-        Me.AppDateLabel = New System.Windows.Forms.Label
-        Me.ImagePictureBox = New System.Windows.Forms.PictureBox
-        Me.DetailsButton = New System.Windows.Forms.Button
-        Me.MoreRichTextBox = New System.Windows.Forms.RichTextBox
-        Me.TabPanelDetails = New System.Windows.Forms.TabControl
-        Me.TabPageApplication = New System.Windows.Forms.TabPage
-        Me.AppInfoListView = New System.Windows.Forms.ListView
-        Me.colKey = New System.Windows.Forms.ColumnHeader
-        Me.colValue = New System.Windows.Forms.ColumnHeader
-        Me.TabPageAssemblies = New System.Windows.Forms.TabPage
-        Me.AssemblyInfoListView = New System.Windows.Forms.ListView
-        Me.colAssemblyName = New System.Windows.Forms.ColumnHeader
-        Me.colAssemblyVersion = New System.Windows.Forms.ColumnHeader
-        Me.colAssemblyBuilt = New System.Windows.Forms.ColumnHeader
-        Me.colAssemblyCodeBase = New System.Windows.Forms.ColumnHeader
-        Me.TabPageAssemblyDetails = New System.Windows.Forms.TabPage
-        Me.AssemblyDetailsListView = New System.Windows.Forms.ListView
-        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader
-        Me.ColumnHeader2 = New System.Windows.Forms.ColumnHeader
-        Me.AssemblyNamesComboBox = New System.Windows.Forms.ComboBox
+        Me.OKButton = New System.Windows.Forms.Button()
+        Me.AppTitleLabel = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.AppDescriptionLabel = New System.Windows.Forms.Label()
+        Me.AppVersionLabel = New System.Windows.Forms.Label()
+        Me.AppCopyrightLabel = New System.Windows.Forms.Label()
+        Me.SysInfoButton = New System.Windows.Forms.Button()
+        Me.AppDateLabel = New System.Windows.Forms.Label()
+        Me.ImagePictureBox = New System.Windows.Forms.PictureBox()
+        Me.DetailsButton = New System.Windows.Forms.Button()
+        Me.MoreRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.TabPanelDetails = New System.Windows.Forms.TabControl()
+        Me.TabPageApplication = New System.Windows.Forms.TabPage()
+        Me.AppInfoListView = New System.Windows.Forms.ListView()
+        Me.colKey = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colValue = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPageAssemblies = New System.Windows.Forms.TabPage()
+        Me.AssemblyInfoListView = New System.Windows.Forms.ListView()
+        Me.colAssemblyName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colAssemblyVersion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colAssemblyBuilt = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colAssemblyCodeBase = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TabPageAssemblyDetails = New System.Windows.Forms.TabPage()
+        Me.AssemblyDetailsListView = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.AssemblyNamesComboBox = New System.Windows.Forms.ComboBox()
         CType(Me.ImagePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPanelDetails.SuspendLayout()
         Me.TabPageApplication.SuspendLayout()
@@ -115,30 +115,30 @@ Public Class frmAbout
         '
         Me.OKButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OKButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.OKButton.Location = New System.Drawing.Point(312, 244)
+        Me.OKButton.Location = New System.Drawing.Point(230, 217)
         Me.OKButton.Name = "OKButton"
-        Me.OKButton.Size = New System.Drawing.Size(76, 23)
+        Me.OKButton.Size = New System.Drawing.Size(152, 43)
         Me.OKButton.TabIndex = 1
         Me.OKButton.Text = "OK"
         '
         'AppTitleLabel
         '
         Me.AppTitleLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AppTitleLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AppTitleLabel.Location = New System.Drawing.Point(60, 8)
+        Me.AppTitleLabel.Location = New System.Drawing.Point(120, 15)
         Me.AppTitleLabel.Name = "AppTitleLabel"
-        Me.AppTitleLabel.Size = New System.Drawing.Size(326, 16)
+        Me.AppTitleLabel.Size = New System.Drawing.Size(258, 29)
         Me.AppTitleLabel.TabIndex = 2
         Me.AppTitleLabel.Text = "%title%"
         '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Location = New System.Drawing.Point(8, 48)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 89)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(362, 3)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -146,39 +146,39 @@ Public Class frmAbout
         'AppDescriptionLabel
         '
         Me.AppDescriptionLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AppDescriptionLabel.Location = New System.Drawing.Point(60, 28)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AppDescriptionLabel.Location = New System.Drawing.Point(120, 52)
         Me.AppDescriptionLabel.Name = "AppDescriptionLabel"
-        Me.AppDescriptionLabel.Size = New System.Drawing.Size(326, 16)
+        Me.AppDescriptionLabel.Size = New System.Drawing.Size(258, 29)
         Me.AppDescriptionLabel.TabIndex = 4
         Me.AppDescriptionLabel.Text = "%description%"
         '
         'AppVersionLabel
         '
         Me.AppVersionLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AppVersionLabel.Location = New System.Drawing.Point(8, 60)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AppVersionLabel.Location = New System.Drawing.Point(16, 111)
         Me.AppVersionLabel.Name = "AppVersionLabel"
-        Me.AppVersionLabel.Size = New System.Drawing.Size(378, 16)
+        Me.AppVersionLabel.Size = New System.Drawing.Size(362, 29)
         Me.AppVersionLabel.TabIndex = 5
         Me.AppVersionLabel.Text = "Version %version%"
         '
         'AppCopyrightLabel
         '
         Me.AppCopyrightLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AppCopyrightLabel.Location = New System.Drawing.Point(8, 100)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AppCopyrightLabel.Location = New System.Drawing.Point(16, 185)
         Me.AppCopyrightLabel.Name = "AppCopyrightLabel"
-        Me.AppCopyrightLabel.Size = New System.Drawing.Size(378, 16)
+        Me.AppCopyrightLabel.Size = New System.Drawing.Size(362, 29)
         Me.AppCopyrightLabel.TabIndex = 6
-        Me.AppCopyrightLabel.Text = "Author: Todd Zimmerman, Information Systems Specialist"
+        Me.AppCopyrightLabel.Text = "Author: Todd Zimmerman"
         '
         'SysInfoButton
         '
         Me.SysInfoButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SysInfoButton.Location = New System.Drawing.Point(212, 244)
+        Me.SysInfoButton.Location = New System.Drawing.Point(30, 217)
         Me.SysInfoButton.Name = "SysInfoButton"
-        Me.SysInfoButton.Size = New System.Drawing.Size(92, 23)
+        Me.SysInfoButton.Size = New System.Drawing.Size(184, 43)
         Me.SysInfoButton.TabIndex = 7
         Me.SysInfoButton.Text = "&System Info..."
         Me.SysInfoButton.Visible = False
@@ -186,18 +186,18 @@ Public Class frmAbout
         'AppDateLabel
         '
         Me.AppDateLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AppDateLabel.Location = New System.Drawing.Point(8, 80)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AppDateLabel.Location = New System.Drawing.Point(16, 148)
         Me.AppDateLabel.Name = "AppDateLabel"
-        Me.AppDateLabel.Size = New System.Drawing.Size(378, 16)
+        Me.AppDateLabel.Size = New System.Drawing.Size(362, 29)
         Me.AppDateLabel.TabIndex = 8
         Me.AppDateLabel.Text = "Built on %builddate%"
         '
         'ImagePictureBox
         '
-        Me.ImagePictureBox.Location = New System.Drawing.Point(16, 8)
+        Me.ImagePictureBox.Location = New System.Drawing.Point(32, 15)
         Me.ImagePictureBox.Name = "ImagePictureBox"
-        Me.ImagePictureBox.Size = New System.Drawing.Size(32, 32)
+        Me.ImagePictureBox.Size = New System.Drawing.Size(64, 59)
         Me.ImagePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.ImagePictureBox.TabIndex = 9
         Me.ImagePictureBox.TabStop = False
@@ -205,47 +205,47 @@ Public Class frmAbout
         'DetailsButton
         '
         Me.DetailsButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DetailsButton.Location = New System.Drawing.Point(228, 244)
+        Me.DetailsButton.Location = New System.Drawing.Point(62, 217)
         Me.DetailsButton.Name = "DetailsButton"
-        Me.DetailsButton.Size = New System.Drawing.Size(76, 23)
+        Me.DetailsButton.Size = New System.Drawing.Size(152, 43)
         Me.DetailsButton.TabIndex = 10
         Me.DetailsButton.Text = "&Details >>"
         '
         'MoreRichTextBox
         '
         Me.MoreRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MoreRichTextBox.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.MoreRichTextBox.Location = New System.Drawing.Point(8, 124)
+        Me.MoreRichTextBox.Location = New System.Drawing.Point(16, 229)
         Me.MoreRichTextBox.Name = "MoreRichTextBox"
         Me.MoreRichTextBox.ReadOnly = True
         Me.MoreRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
-        Me.MoreRichTextBox.Size = New System.Drawing.Size(378, 112)
+        Me.MoreRichTextBox.Size = New System.Drawing.Size(362, 0)
         Me.MoreRichTextBox.TabIndex = 13
-        Me.MoreRichTextBox.Text = "%product% is %copyright%"
+        Me.MoreRichTextBox.Text = "%product%"
         '
         'TabPanelDetails
         '
         Me.TabPanelDetails.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabPanelDetails.Controls.Add(Me.TabPageApplication)
         Me.TabPanelDetails.Controls.Add(Me.TabPageAssemblies)
         Me.TabPanelDetails.Controls.Add(Me.TabPageAssemblyDetails)
-        Me.TabPanelDetails.Location = New System.Drawing.Point(8, 124)
+        Me.TabPanelDetails.Location = New System.Drawing.Point(16, 229)
         Me.TabPanelDetails.Name = "TabPanelDetails"
         Me.TabPanelDetails.SelectedIndex = 0
-        Me.TabPanelDetails.Size = New System.Drawing.Size(376, 112)
+        Me.TabPanelDetails.Size = New System.Drawing.Size(358, 0)
         Me.TabPanelDetails.TabIndex = 15
         Me.TabPanelDetails.Visible = False
         '
         'TabPageApplication
         '
         Me.TabPageApplication.Controls.Add(Me.AppInfoListView)
-        Me.TabPageApplication.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageApplication.Location = New System.Drawing.Point(8, 39)
         Me.TabPageApplication.Name = "TabPageApplication"
-        Me.TabPageApplication.Size = New System.Drawing.Size(368, 86)
+        Me.TabPageApplication.Size = New System.Drawing.Size(342, 0)
         Me.TabPageApplication.TabIndex = 0
         Me.TabPageApplication.Text = "Application"
         '
@@ -255,9 +255,10 @@ Public Class frmAbout
         Me.AppInfoListView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AppInfoListView.FullRowSelect = True
         Me.AppInfoListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.AppInfoListView.HideSelection = False
         Me.AppInfoListView.Location = New System.Drawing.Point(0, 0)
         Me.AppInfoListView.Name = "AppInfoListView"
-        Me.AppInfoListView.Size = New System.Drawing.Size(368, 86)
+        Me.AppInfoListView.Size = New System.Drawing.Size(342, 0)
         Me.AppInfoListView.TabIndex = 16
         Me.AppInfoListView.UseCompatibleStateImageBehavior = False
         Me.AppInfoListView.View = System.Windows.Forms.View.Details
@@ -275,9 +276,9 @@ Public Class frmAbout
         'TabPageAssemblies
         '
         Me.TabPageAssemblies.Controls.Add(Me.AssemblyInfoListView)
-        Me.TabPageAssemblies.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageAssemblies.Location = New System.Drawing.Point(8, 39)
         Me.TabPageAssemblies.Name = "TabPageAssemblies"
-        Me.TabPageAssemblies.Size = New System.Drawing.Size(368, 86)
+        Me.TabPageAssemblies.Size = New System.Drawing.Size(736, 160)
         Me.TabPageAssemblies.TabIndex = 1
         Me.TabPageAssemblies.Text = "Assemblies"
         '
@@ -286,10 +287,11 @@ Public Class frmAbout
         Me.AssemblyInfoListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colAssemblyName, Me.colAssemblyVersion, Me.colAssemblyBuilt, Me.colAssemblyCodeBase})
         Me.AssemblyInfoListView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AssemblyInfoListView.FullRowSelect = True
+        Me.AssemblyInfoListView.HideSelection = False
         Me.AssemblyInfoListView.Location = New System.Drawing.Point(0, 0)
         Me.AssemblyInfoListView.MultiSelect = False
         Me.AssemblyInfoListView.Name = "AssemblyInfoListView"
-        Me.AssemblyInfoListView.Size = New System.Drawing.Size(368, 86)
+        Me.AssemblyInfoListView.Size = New System.Drawing.Size(736, 160)
         Me.AssemblyInfoListView.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.AssemblyInfoListView.TabIndex = 13
         Me.AssemblyInfoListView.UseCompatibleStateImageBehavior = False
@@ -319,9 +321,9 @@ Public Class frmAbout
         '
         Me.TabPageAssemblyDetails.Controls.Add(Me.AssemblyDetailsListView)
         Me.TabPageAssemblyDetails.Controls.Add(Me.AssemblyNamesComboBox)
-        Me.TabPageAssemblyDetails.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageAssemblyDetails.Location = New System.Drawing.Point(8, 39)
         Me.TabPageAssemblyDetails.Name = "TabPageAssemblyDetails"
-        Me.TabPageAssemblyDetails.Size = New System.Drawing.Size(368, 86)
+        Me.TabPageAssemblyDetails.Size = New System.Drawing.Size(736, 160)
         Me.TabPageAssemblyDetails.TabIndex = 2
         Me.TabPageAssemblyDetails.Text = "Assembly Details"
         '
@@ -331,9 +333,10 @@ Public Class frmAbout
         Me.AssemblyDetailsListView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AssemblyDetailsListView.FullRowSelect = True
         Me.AssemblyDetailsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.AssemblyDetailsListView.Location = New System.Drawing.Point(0, 21)
+        Me.AssemblyDetailsListView.HideSelection = False
+        Me.AssemblyDetailsListView.Location = New System.Drawing.Point(0, 33)
         Me.AssemblyDetailsListView.Name = "AssemblyDetailsListView"
-        Me.AssemblyDetailsListView.Size = New System.Drawing.Size(368, 65)
+        Me.AssemblyDetailsListView.Size = New System.Drawing.Size(736, 127)
         Me.AssemblyDetailsListView.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.AssemblyDetailsListView.TabIndex = 19
         Me.AssemblyDetailsListView.UseCompatibleStateImageBehavior = False
@@ -355,13 +358,13 @@ Public Class frmAbout
         Me.AssemblyNamesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.AssemblyNamesComboBox.Location = New System.Drawing.Point(0, 0)
         Me.AssemblyNamesComboBox.Name = "AssemblyNamesComboBox"
-        Me.AssemblyNamesComboBox.Size = New System.Drawing.Size(368, 21)
+        Me.AssemblyNamesComboBox.Size = New System.Drawing.Size(736, 33)
         Me.AssemblyNamesComboBox.Sorted = True
         Me.AssemblyNamesComboBox.TabIndex = 18
         '
         'frmAbout
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(10, 24)
         Me.CancelButton = Me.OKButton
         Me.ClientSize = New System.Drawing.Size(394, 275)
         Me.Controls.Add(Me.DetailsButton)
@@ -571,7 +574,7 @@ Public Class frmAbout
     ''' <param name="a">Assembly to get build date for</param>
     ''' <param name="ForceFileDate">Don't attempt to use the build number to calculate the date</param>
     ''' <returns>DateTime this assembly was last built</returns>
-    Private Shared Function AssemblyBuildDate(ByVal a As System.Reflection.Assembly, _
+    Private Shared Function AssemblyBuildDate(ByVal a As System.Reflection.Assembly,
     Optional ByVal ForceFileDate As Boolean = False) As DateTime
 
         Dim AssemblyVersion As System.Version = a.GetName.Version
@@ -580,8 +583,8 @@ Public Class frmAbout
         If ForceFileDate Then
             dt = AssemblyLastWriteTime(a)
         Else
-            dt = CType("01/01/2000", DateTime). _
-            AddDays(AssemblyVersion.Build). _
+            dt = CType("01/01/2000", DateTime).
+            AddDays(AssemblyVersion.Build).
             AddSeconds(AssemblyVersion.Revision * 2)
             If TimeZone.IsDaylightSavingTime(dt, TimeZone.CurrentTimeZone.GetDaylightChanges(dt.Year)) Then
                 dt = dt.AddHours(1)
@@ -740,10 +743,10 @@ Public Class frmAbout
         End If
 
         If strSysInfoPath = "" Then
-            MessageBox.Show("System Information is unavailable at this time." & _
-            Environment.NewLine & _
-            Environment.NewLine & _
-            "(couldn't find path for Microsoft System Information Tool in the registry.)", _
+            MessageBox.Show("System Information is unavailable at this time." &
+            Environment.NewLine &
+            Environment.NewLine &
+            "(couldn't find path for Microsoft System Information Tool in the registry.)",
             Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
@@ -751,10 +754,10 @@ Public Class frmAbout
         Try
             Process.Start(strSysInfoPath)
         Catch ex As Exception
-            MessageBox.Show("System Information is unavailable at this time." & _
-            Environment.NewLine & _
-            Environment.NewLine & _
-            "(couldn't launch '" & strSysInfoPath & "')", _
+            MessageBox.Show("System Information is unavailable at this time." &
+            Environment.NewLine &
+            Environment.NewLine &
+            "(couldn't launch '" & strSysInfoPath & "')",
             Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Stop)
         End Try
 
@@ -1072,8 +1075,8 @@ Public Class frmAbout
         End Sub
 
         Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer Implements IComparer.Compare
-            Dim intResult As Integer = _
-            [String].Compare(CType(x, ListViewItem).SubItems(_intCol).Text, _
+            Dim intResult As Integer =
+            [String].Compare(CType(x, ListViewItem).SubItems(_intCol).Text,
             CType(y, ListViewItem).SubItems(_intCol).Text)
 
             If _IsAscending Then
@@ -1094,4 +1097,7 @@ Public Class frmAbout
         End If
     End Sub
 
+    Private Sub AppCopyrightLabel_Click(sender As Object, e As EventArgs) Handles AppCopyrightLabel.Click
+
+    End Sub
 End Class

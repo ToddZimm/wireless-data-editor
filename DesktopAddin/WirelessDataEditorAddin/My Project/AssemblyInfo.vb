@@ -9,16 +9,16 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Wireless Data Editor Addin")> 
-<Assembly: AssemblyDescription("Tools for editing wireless cell data for 9-1-1 systems.")> 
-<Assembly: AssemblyCompany("Lancaster County-Wide Communications")> 
-<Assembly: AssemblyProduct("Wireless Data Editor Addin")> 
-<Assembly: AssemblyCopyright("Copyright © County of Lancaster 2011")> 
+<Assembly: AssemblyDescription("Tools for editing wireless cell data for 9-1-1 systems.")>
+<Assembly: AssemblyCompany("Todd Zimmerman")>
+<Assembly: AssemblyProduct("Wireless Data Editor Addin")>
+<Assembly: AssemblyCopyright("Todd Zimmerman")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("c7c7fd28-77e9-47f4-aeab-5732c9376b39")> 
+<Assembly: Guid("c7c7fd28-77e9-47f4-aeab-5732c9376b39")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.1.0.0")> 
-<Assembly: AssemblyFileVersion("1.1.0.0")> 
+<Assembly: AssemblyVersion("1.2.0.0")>
+<Assembly: AssemblyFileVersion("1.2.0.0")>

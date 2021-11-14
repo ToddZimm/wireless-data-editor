@@ -2,38 +2,38 @@
   <Name>Wireless Data Editor</Name>
   <AddInID>{b723c0b8-5b5a-4202-901a-b9533f29c652}</AddInID>
   <Description>Tools for maintaining wireless cell sector data for use in 9-1-1 systems.</Description>
-  <Version>1.1</Version>
+  <Version>1.2</Version>
   <Image>Images\WirelessDataEditor.png</Image>
   <Author>Todd Zimmerman</Author>
-  <Company>Lancaster County-Wide Communications</Company>
-  <Date>2/25/2011</Date>
+  <Company>ToddZimm</Company>
+  <Date>11/14/2021</Date>
   <Targets>
-    <Target name="Desktop" version="10.0" />
+    <Target name="Desktop" version="10.4" />
   </Targets>
   <AddIn language="CLR" library="WirelessDataEditor.dll" namespace="WirelessDataEditor">
     <ArcMap>
       <Commands>
-        <Button id="Lancaster_County-Wide_Communications_WirelessDataEditor_CreateSectorCommand" class="CreateSectorCommand" message="Creates or updates a single cell sector." caption="Create Cell Sector" tip="Create Cell Sector" category="Wireless Data" image="Images\CreateSectorCommand.png" />
-        <Button id="Lancaster_County-Wide_Communications_WirelessDataEditor_ImportCellTableCommand" class="ImportCellTableCommand" message="Imports a table of cell sector/site data." caption="Import Cell Table" tip="Import Cell Table" category="Wireless Data" image="Images\ImportCellTableCommand.png" />
-        <Button id="Lancaster_County-Wide_Communications_WirelessDataEditor_AboutCommand" class="AboutCommand" message="About the Wireless Data tools." caption="About Wireless Data Editor" tip="About Wireless Data Editor" category="Wireless Data" />
-        <Button id="Lancaster_County-Wide_Communications_WirelessDataEditor_DefaultStateCommand" class="DefaultStateCommand" message="Allows the user to change the default state used on the Create Sector form." caption="Change Default State" tip="Change Default State" category="Wireless Data" />
-        <Button id="Lancaster_County-Wide_Communications_WirelessDataEditor_DefaultCountyCommand" class="DefaultCountyCommand" message="Allows the user to change the default FIPS code used on the Create Sector form." caption="Change Default County ID" tip="Change Default County ID" category="Wireless Data" />
+        <Button id="ToddZimm_WirelessDataEditor_CreateSectorCommand" class="CreateSectorCommand" message="Creates or updates a single cell sector." caption="Create Cell Sector" tip="Create Cell Sector" category="Wireless Data" image="Images\CreateSectorCommand.png" />
+        <Button id="ToddZimm_WirelessDataEditor_ImportCellTableCommand" class="ImportCellTableCommand" message="Imports a table of cell sector/site data." caption="Import Cell Table" tip="Import Cell Table" category="Wireless Data" image="Images\ImportCellTableCommand.png" />
+        <Button id="ToddZimm_WirelessDataEditor_AboutCommand" class="AboutCommand" message="About the Wireless Data tools." caption="About Wireless Data Editor" tip="About Wireless Data Editor" category="Wireless Data" />
+        <Button id="ToddZimm_WirelessDataEditor_DefaultStateCommand" class="DefaultStateCommand" message="Allows the user to change the default state used on the Create Sector form." caption="Change Default State" tip="Change Default State" category="Wireless Data" />
+        <Button id="ToddZimm_WirelessDataEditor_DefaultCountyCommand" class="DefaultCountyCommand" message="Allows the user to change the default FIPS code used on the Create Sector form." caption="Change Default County ID" tip="Change Default County ID" category="Wireless Data" />
       </Commands>
       <Toolbars>
-        <Toolbar id="Lancaster_County-Wide_Communications_WirelessDataEditor_Wireless_Data_Editor" caption="Wireless Data Editor" showInitially="true">
+        <Toolbar id="ToddZimm_WirelessDataEditor_Wireless_Data_Editor" caption="Wireless Data Editor" showInitially="true">
           <Items>
-            <Menu refID="Lancaster_County-Wide_Communications_WirelessDataEditor_Wireless_Data_Editor_1" />
-            <Button refID="Lancaster_County-Wide_Communications_WirelessDataEditor_CreateSectorCommand" separator="true"/>
-            <Button refID="Lancaster_County-Wide_Communications_WirelessDataEditor_ImportCellTableCommand" />
+            <Menu refID="ToddZimm_WirelessDataEditor_Wireless_Data_Editor_1" />
+            <Button refID="ToddZimm_WirelessDataEditor_CreateSectorCommand" separator="true"/>
+            <Button refID="ToddZimm_WirelessDataEditor_ImportCellTableCommand" />
           </Items>
         </Toolbar>
       </Toolbars>
       <Menus>
-        <Menu id="Lancaster_County-Wide_Communications_WirelessDataEditor_Wireless_Data_Editor_1" caption="Wireless Data Editor" isRootMenu="false">
+        <Menu id="ToddZimm_WirelessDataEditor_Wireless_Data_Editor_1" caption="Wireless Data Editor" isRootMenu="false">
           <Items>
-            <Button refID="Lancaster_County-Wide_Communications_WirelessDataEditor_DefaultStateCommand" />
-            <Button refID="Lancaster_County-Wide_Communications_WirelessDataEditor_DefaultCountyCommand" />
-            <Button refID="Lancaster_County-Wide_Communications_WirelessDataEditor_AboutCommand" />
+            <Button refID="ToddZimm_WirelessDataEditor_DefaultStateCommand" />
+            <Button refID="ToddZimm_WirelessDataEditor_DefaultCountyCommand" />
+            <Button refID="ToddZimm_WirelessDataEditor_AboutCommand" />
           </Items>
         </Menu>
       </Menus>
